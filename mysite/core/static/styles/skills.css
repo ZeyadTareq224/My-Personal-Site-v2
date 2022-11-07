@@ -1,0 +1,70 @@
+:root {
+    --color-primary: #191d2b;
+    --color-secondary: #27AE60;
+    --color-white: #FFFFFF;
+    --color-black: #000;
+    --color-grey0: #f8f8f8;
+    --color-grey-1: #dbe1e8;
+    --color-grey-2: #b2becd;
+    --color-grey-3: #6c7983;
+    --color-grey-4: #454e56;
+    --color-grey-5: #2a2e35;
+    --color-grey-6: #12181b;
+    --br-sm-2: 14px;
+    --shadow: rgb(28, 220, 40);
+
+  }
+  
+  .light-mode {
+    --color-primary: #FFFFFF;
+    --color-secondary: #1f80ca;
+    --color-white: #454e56;
+    --color-black: #000;
+    --color-grey0: #f8f8f8;
+    --color-grey-1: #6c7983;
+    --color-grey-2: #6c7983;
+    --color-grey-3: #6c7983;
+    --color-grey-4: #454e56;
+    --color-grey-5: #f8f8f8;
+    --color-grey-6: #12181b;
+    --shadow: rgb(9, 40, 117)
+  }
+  
+.skills > h2{
+    margin-top: 60px;
+    font-size: 50px; 
+}
+.skills-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap: 40px;
+    margin: 50px 0;
+}
+.skill-img{
+    background-color: #fff;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.4s;
+    border: 2px solid var(--color-grey-6);
+}
+@media(max-width:767px){
+    .skill-img{
+        margin: auto;
+    }
+}
+.skills-wrapper img{
+    width: 120px;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.skill-img:hover{
+    background-color: var(--color-secondary);
+    transform: rotate(360deg) scale(1.2);
+    box-shadow: 2px 2px 5px var(--shadow);
+
+}
